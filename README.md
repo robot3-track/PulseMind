@@ -3,7 +3,8 @@
 PulseMind is a human-centered health assistant designed to help people assess symptoms, understand complex medical records and lab test results in everyday language, and track daily health vitals.
 
 Built with a focus on clean clinical clarity, accessible typography, and safety-first design, PulseMind avoids confusing medical jargon and artificial visual clutter to provide calm, practical health guidance.
-
+Test out the application at: https://pulse-mind-medical.vercel.app
+Read our guidelines (PDF doc) at: https://drive.google.com/file/d/1o4KsfA_Bw1FUT17946TCUK3VT6j-s_4_/view?usp=sharing
 ---
 
 ## Key Features
