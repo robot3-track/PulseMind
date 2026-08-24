@@ -143,6 +143,8 @@ export default function SymptomAnalyzer({ onLogSymptomToDiary }: SymptomAnalyzer
     }));
   };
 
+  const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
   const handleExecuteAnalysis = async () => {
     if (formData.primarySymptoms.length === 0) {
       alert('Please select or enter at least one symptom.');
@@ -153,9 +155,12 @@ export default function SymptomAnalyzer({ onLogSymptomToDiary }: SymptomAnalyzer
     setAnalysisStage('Stratifying clinical risk level...');
 
     try {
-      setTimeout(() => setAnalysisStage('Evaluating differential cause probabilities...'), 500);
-      setTimeout(() => setAnalysisStage('Scanning contraindications & red flags...'), 1000);
-      setTimeout(() => setAnalysisStage('Formulating tailored doctor discussion questions...'), 1500);
+      await delay(400);
+      setAnalysisStage('Evaluating differential cause probabilities...');
+      await delay(400);
+      setAnalysisStage('Scanning contraindications & red flags...');
+      await delay(400);
+      setAnalysisStage('Formulating tailored doctor discussion questions...');
 
       const res = await fetch('/api/analyze-symptoms', {
         method: 'POST',
