@@ -1,0 +1,6 @@
+{
+  "name": "PulseMind AI",
+  "description": "A health assistant to check symptoms, understand medical records and lab results in plain language, and track daily vitals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
